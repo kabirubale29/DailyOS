@@ -1,0 +1,17 @@
+{
+  "short_name": "DailyOS",
+  "name": "DailyOS — Personal Productivity Platform",
+  "description": "Personal productivity and daily habit management for Kabir Ubale",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512 any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0b0f19",
+  "theme_color": "#0b0f19",
+  "display": "standalone",
+  "scope": "/"
+}
