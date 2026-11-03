@@ -41,17 +41,19 @@ export const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
     >
       {/* Brand Header */}
       <div className="flex items-center justify-between h-16 px-4 border-b border-neutral-100 dark:border-neutral-800/80">
-        <NavLink to="/" className="flex items-center gap-3 overflow-hidden">
-          <div className="w-9 h-9 rounded-xl bg-linear-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-bold shadow-xs shrink-0">
-            <span className="text-base tracking-tighter">D</span>
-          </div>
+        <NavLink to="/" className="flex items-center gap-3 overflow-hidden group">
+          <img
+            src="/logo-icon.png"
+            alt="DailyOS Logo"
+            className="w-9 h-9 rounded-xl object-contain drop-shadow-[0_0_8px_rgba(99,102,241,0.5)] shrink-0 transition-transform group-hover:scale-105"
+          />
           {!isCollapsed && (
             <div className="flex flex-col">
-              <span className="text-sm font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
-                Daily<span className="text-indigo-600 dark:text-indigo-400">OS</span>
+              <span className="text-base font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100 flex items-center">
+                Daily<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500">OS</span>
               </span>
-              <span className="text-[10px] uppercase font-semibold tracking-wider text-neutral-400">
-                Personal Growth OS
+              <span className="text-[9px] uppercase font-bold tracking-widest text-indigo-500/80 dark:text-indigo-400/80">
+                Your Productivity OS
               </span>
             </div>
           )}

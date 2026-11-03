@@ -41,12 +41,19 @@ export const MobileDrawer = ({ isOpen, onClose }) => {
       <div className="relative w-72 max-w-[80vw] bg-white dark:bg-[#101623] h-full shadow-2xl flex flex-col z-10 animate-fade-in border-r border-neutral-200 dark:border-neutral-800">
         <div className="flex items-center justify-between p-4 border-b border-neutral-100 dark:border-neutral-800">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-sm">
-              D
+            <img
+              src="/logo-icon.png"
+              alt="DailyOS Logo"
+              className="w-8 h-8 rounded-lg object-contain drop-shadow-[0_0_6px_rgba(99,102,241,0.5)] shrink-0"
+            />
+            <div className="flex flex-col">
+              <span className="font-extrabold text-sm tracking-tight text-neutral-900 dark:text-neutral-100">
+                Daily<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500">OS</span>
+              </span>
+              <span className="text-[8px] uppercase font-bold tracking-widest text-indigo-500/80 dark:text-indigo-400/80">
+                Your Productivity OS
+              </span>
             </div>
-            <span className="font-bold text-neutral-900 dark:text-neutral-100">
-              Daily<span className="text-indigo-600 dark:text-indigo-400">OS</span>
-            </span>
           </div>
           <button
             onClick={onClose}

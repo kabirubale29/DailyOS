@@ -4,9 +4,16 @@
   "description": "Personal productivity and daily habit management for Kabir Ubale",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192 512x512 any"
+      "src": "/logo-icon.png",
+      "type": "image/png",
+      "sizes": "192x192 480x480 512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "1024x682",
+      "purpose": "any"
     }
   ],
   "start_url": "/",

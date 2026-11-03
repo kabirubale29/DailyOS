@@ -46,14 +46,16 @@ export const Login = () => {
       <div className="w-full max-w-md bg-white dark:bg-[#131926] border border-neutral-200/80 dark:border-neutral-800/80 rounded-2xl shadow-xl p-8 animate-fade-in">
         {/* Brand Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex w-12 h-12 rounded-2xl bg-linear-to-tr from-indigo-600 to-violet-500 items-center justify-center text-white font-bold text-xl shadow-md mb-3">
-            D
-          </div>
+          <img
+            src="/logo-icon.png"
+            alt="DailyOS Logo"
+            className="w-16 h-16 rounded-2xl object-contain drop-shadow-[0_0_15px_rgba(99,102,241,0.6)] mx-auto mb-3"
+          />
           <h2 className="text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Welcome to Daily<span className="text-indigo-600 dark:text-indigo-400">OS</span>
+            Welcome to Daily<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500">OS</span>
           </h2>
-          <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
-            Personal Productivity & Habit Management Platform
+          <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 uppercase tracking-wider font-semibold">
+            Your Productivity OS
           </p>
         </div>
 

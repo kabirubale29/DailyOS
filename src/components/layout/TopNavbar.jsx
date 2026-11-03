@@ -60,6 +60,11 @@ export const TopNavbar = ({ onOpenMobileMenu }) => {
           >
             <Menu className="w-5 h-5" />
           </button>
+          <img
+            src="/logo-icon.png"
+            alt="DailyOS"
+            className="w-7 h-7 rounded-lg object-contain md:hidden drop-shadow-[0_0_6px_rgba(99,102,241,0.5)]"
+          />
           <div>
             <h1 className="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">
               {pageTitle}
